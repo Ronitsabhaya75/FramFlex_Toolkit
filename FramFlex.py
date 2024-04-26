@@ -17,7 +17,7 @@ if it's not the frame it break the loop and exits
 '''
 def opencam(face_cap):
 
-    video_cap = cv2.VideoCapture(1)
+    video_cap = cv2.VideoCapture(0)
 
 
     while True:
@@ -59,7 +59,7 @@ if it's not the frame it break the loop and exits
 Canny() function in OpenCV performs edge detection on an image
 '''
 def outline(face_cap):
-    video_cap = cv2.VideoCapture(1)
+    video_cap = cv2.VideoCapture(0)
 
 
     while True:
@@ -93,7 +93,7 @@ adapative threshold the algorithm determines the threshold for a pixel based on 
 '''
 
 def cartoon(face_cap):
-    video_cap = cv2.VideoCapture(1)
+    video_cap = cv2.VideoCapture(0)
 
 
     while True:
@@ -130,7 +130,7 @@ def numberofpixelsingrayframe():
 
 
     fig, (ax1, ax2) = plt.subplots(1, 2)
-    video_cap = cv2.VideoCapture(1)
+    video_cap = cv2.VideoCapture(0)
 
     while True:
         ret, video_data = video_cap.read()
@@ -170,7 +170,7 @@ ravel fnuction convert the 2 dimensional array to 1 dimesional
 def numberofpixelsincolorframe():
     plt.ion()
     fig, (ax1, ax2) = plt.subplots(1, 2)
-    video_cap = cv2.VideoCapture(1)
+    video_cap = cv2.VideoCapture(0)
     
     while True:
         ret,video_data = video_cap.read()
