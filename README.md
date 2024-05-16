@@ -22,7 +22,7 @@ The FrameFlex Toolkit is a Python program designed to interact with camera funct
 3. Matplotlib
 
 # Installations
-To install PIL, you can use pip:
+To install openCV, you can use pip:
             
     pip install opencv-python
 
